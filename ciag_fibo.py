@@ -1,6 +1,12 @@
-    
-lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-for number in lista:                  
-fibo = numbers[-1] + numbers[-2]  
-numbers.append(fibo)              
-print (fibo)  
+def fibbonaci_numbers(n):
+    ''' zwraca liczby Fibonacciego mniejsze od n '''
+    wynik = []
+    a, b = 0, 1
+    while a < n:
+        wynik.append(a)
+        a, b = b, a+b
+    return wynik
+
+x = fibbonaci_numbers(100)
+print(x)
+print(fibbonaci_numbers.__doc__)
