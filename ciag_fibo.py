@@ -6,7 +6,7 @@ if x == 0:
 elif x == 1:
     print(1)
 else:
-    for element in range(2,x):
+    for element in range(1,x):
         x2=x1+x0
         x0=x1
         x1=x2
