@@ -1,12 +1,14 @@
-def fibbonaci_numbers(n):
-    ''' zwraca liczby Fibonacciego mniejsze od n '''
-    wynik = []
-    a, b = 0, 1
-    while a < n:
-        wynik.append(a)
-        a, b = b, a+b
-    return wynik
-
-x = fibbonaci_numbers(100)
-print(x)
-print(fibbonaci_numbers.__doc__)
+print("podaj liczbę dla której obliczymy kod fibonacciego")
+x=input()
+x0=0
+x1=1
+if x == 0:
+    print(0)
+elif x == 1:
+    print(1)
+else: 
+     for element in range(2,20):
+      x0=x1
+      x1=x2
+      x2=x1+x0
+print(x2)
