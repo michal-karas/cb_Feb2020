@@ -73,14 +73,15 @@ for entry in data:
 x = sorted(mediana_list)
 print(x)
 print ("Ilość liczb w tabeli to: ", liczba_elementow)
-print ("wyznaczamy środek- tutaj zostanie podana cyfra środka ciągu : ", liczba_elementow / 2)
-q1 = x[43+1]
-q2 = x [44+1]
-print ("43cia cyfra w ciągu to : ", q1)
-print ("44ta cyfra w ciągu to :", q2)
-mediana = (q1 + q2) / 2
-print ("mediana wynosi :", mediana)
 
+#dla ciągu nieparzystego
+q1 = int((liczba_elementow + 1) / 2)
+print("środkiem ciągu jest liczba :", q1)
+print ("Mediana wynosi : ",  x[q1])
+
+#dla ciągu parzystego
+q2 = (liczba_elementow / 2)
+q3 = (liczba_elementow / 2) + 1
 
         
 
