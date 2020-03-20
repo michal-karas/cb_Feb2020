@@ -39,7 +39,7 @@ for entry in data:
         worst_title = entry["title"]
 
 print(f"Najgorsza ocena filmu RdN to: {worst_score}")
-print(f"Tytuł najgorszego filmu to {worst_title} and {worst_title}")
+print(f"Tytuł najgorszego filmu to {worst_title}")
 
 
 best_score = 100
@@ -49,14 +49,13 @@ for entry in data:
         best_score = entry["score"]
         best_title = entry["title"]
 
-print(f"Najgorsza ocena filmu RdN to: {best_score}")
-print(f"Tytuł najgorszego filmu to {best_title}")
+print(f"Najlepsza ocena filmu RdN to: {best_score}")
+print(f"Tytuł najlepszego filmu to {best_title}")
 
 
 suma = 0
 list_of_elements = 0
-data = data[0]["score"]
-for entry["score"] in data:
+for entry in data:
     suma += entry["score"]
     list_of_elements += 1
 
